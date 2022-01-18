@@ -1,0 +1,32 @@
+.survey-card {
+  background: #eef0ef;
+}
+accordion-group {
+  padding: 10px;
+}
+
+accordion-group {
+  ::ng-deep {
+    div {
+      &.panel {
+        border: none;
+      }
+      & > div.panel-heading.card-header.panel-enabled {
+        border: none;
+        background: none;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+input.form-check-input {
+  transform: scale(2);
+  margin-top: 10px;
+}
+
+.survey-image-style {
+  width: 100%;
+  height: 500px;
+  object-fit: fill;
+}
