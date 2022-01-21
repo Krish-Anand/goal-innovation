@@ -4,6 +4,7 @@ import { HomeComponent } from './core/component/home/home.component';
 import { GoalListComponent } from '../app/core/component/goal-list/goal-list.component';
 import { IndexLayoutComponent } from './layout/index-layout/index-layout.component';
 import { SurveyComponent } from './core/component/survey/survey.component';
+import { GoalDashboardComponent } from './core/component/goal-dashboard/goal-dashboard.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -13,7 +14,7 @@ const routes: Routes = [
     children: [
       { path: 'home', component: HomeComponent },
       { path: 'survey', component: SurveyComponent },
-      { path: 'goal-list', component: GoalListComponent },
+      { path: 'goal-list', component: GoalDashboardComponent },
     ],
   },
 ];

@@ -12,6 +12,7 @@ import { IndexLayoutComponent } from './layout/index-layout/index-layout.compone
 import { HomeComponent } from './core/component/home/home.component';
 import { GoalListComponent } from '../app/core/component/goal-list/goal-list.component';
 import { SurveyComponent } from './core/component/survey/survey.component';
+import { GoalDashboardComponent } from './core/component/goal-dashboard/goal-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { SurveyComponent } from './core/component/survey/survey.component';
     HomeComponent,
     GoalListComponent,
     SurveyComponent,
+    GoalDashboardComponent,
   ],
   imports: [
     BrowserModule,
