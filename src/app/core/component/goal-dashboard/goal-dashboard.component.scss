@@ -1,9 +1,10 @@
 .goal-outer {
   border-radius: 10px;
-  border: 1px solid rgb(17, 3, 3);
+  border: 1px solid rgb(68, 63, 63);
   background: #fff;
 }
 
+<<<<<<< HEAD
 #rcorners1 {
   border-radius: 30px;
   background: white;
@@ -11,3 +12,26 @@
   width: -fit-content;
   height: 50px; 
 }
+=======
+.digital-active-content {
+  background: #fff;
+}
+
+.digital-message {
+  background: #c3cdcf;
+  border-radius: 10px;
+  border: 0.5px solid rgb(177, 169, 169);
+}
+
+.badge-place {
+  position: absolute;
+  top: 0px;
+  left: 50px;
+  padding-right: 5px;
+  padding-left: 5px;
+  font-size: 12px;
+  border-radius: 5px;
+  border: 1px solid #a38b00;
+  background: #fbedac;
+}
+>>>>>>> 07a3dadc896751199de554153b303e2aecc811ae
