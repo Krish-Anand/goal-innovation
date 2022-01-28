@@ -1,161 +1,137 @@
-<div class="survey-parent-list">
-  <div class="p-3">
-    <div class="card survey-card p-2">
-      <div class="row">
-        <div class="col-md-6">
-      <p>Answer below survey for personalized goal plan</p>
-          <accordion [isAnimated]="true">
-            <accordion-group>
-              <div class="form-check" accordion-heading>
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label class="form-check-label mx-2" for="flexCheckDefault">
-                  Do you have life insurance
-                </label>
-                <em class="fas fa-chevron-down float-right mt-2"></em>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                <label class="form-check-label" for="exampleRadios1">
-                  yes
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                <label class="form-check-label" for="exampleRadios2">
-                  no
-                </label>
-              </div>
-              
-            </accordion-group>
-            <accordion-group>
-              <div class="form-check" accordion-heading>
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label class="form-check-label mx-2" for="flexCheckDefault">
-                  Do you have Medical insurance
-                </label>
-                <em class="fas fa-chevron-down float-right mt-2"></em>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                <label class="form-check-label" for="exampleRadios1">
-                  yes
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                <label class="form-check-label" for="exampleRadios2">
-                  no
-                </label>
-              </div>
-            </accordion-group>
-            <accordion-group>
-              <div class="form-check" accordion-heading>
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label class="form-check-label mx-2" for="flexCheckDefault">
-                  Payout loan / credit card debt 
-                </label>
-                <em class="fas fa-chevron-down float-right mt-2"></em>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                <label class="form-check-label" for="exampleRadios1">
-                  yes
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                <label class="form-check-label" for="exampleRadios2">
-                  no
-                </label>
-              </div>
-          
-            </accordion-group>
-            <accordion-group>
-              <div class="form-check" accordion-heading>
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label class="form-check-label mx-2" for="flexCheckDefault">
-                  Interested in any emergency fund
-                </label>
-                <em class="fas fa-chevron-down float-right mt-2"></em>
-              </div>
-              <p>Some content</p>
-            </accordion-group>
-            <accordion-group>
-              <div class="form-check" accordion-heading>
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label class="form-check-label mx-2" for="flexCheckDefault">
-                  Any other investments
-                </label>
-                <em class="fas fa-chevron-down float-right mt-2"></em>
-              </div>
-              <p>Some content</p>
-            </accordion-group>
-
-            <accordion-group>
-              <div class="form-check" accordion-heading>
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label class="form-check-label mx-2" for="flexCheckDefault">
-                  Help us understand priority
-                </label>
-                <em class="fas fa-chevron-down float-right mt-2"></em>
-              </div>
-              <p>Some content</p>
-            </accordion-group>
-          </accordion>
-
-          <div class="card button-card mt-5 mx-2">
-            <div class="d-flex justify-content-between my-3">
-              <button type="button" class="btn btn-outline-info mx-2">
-                Skip Questions
-              </button>
-              <button
-                type="button"
-                class="btn btn-info mx-2"
-                routerLink="/goal-list"
-              >
-                Continue
-              </button>
+<div class="p-3">
+    <h4 class="px-3">Please Kick the Survey for Best Goal Plans</h4>
+    <accordion [isAnimated]="true">
+        <accordion-group #life>
+            <div class="d-flex align-items-center" accordion-heading>
+                <em class="fas fa-life-ring fa-xl pt-1"></em>
+                <p class="px-3 mb-0">Do you have life insurance</p>
+                <em class="fas pt-1 ml-auto" [ngClass]="{
+            'fa-chevron-down': life?.isOpen,
+            'fa-chevron-up': !life?.isOpen
+          }"></em>
             </div>
-          </div>
+            <div class="d-flex radio-group my-3">
+                <div class="form-check px-3">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked />
+                    <label class="form-check-label" for="exampleRadios1"> yes </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" />
+                    <label class="form-check-label" for="exampleRadios2"> no </label>
+                </div>
+            </div>
+        </accordion-group>
+        <accordion-group #medical>
+            <div class="d-flex align-items-center" accordion-heading>
+                <em class="far fa-hospital fa-xl pt-1"></em>
+                <p class="px-3 mb-0">Do you have Medical insurance</p>
+                <em class="fas pt-1 ml-auto" [ngClass]="{
+            'fa-chevron-down': medical?.isOpen,
+            'fa-chevron-up': !medical?.isOpen
+          }"></em>
+            </div>
+            <div class="d-flex radio-group my-3">
+                <div class="form-check px-3">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked />
+                    <label class="form-check-label" for="exampleRadios1"> yes </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" />
+                    <label class="form-check-label" for="exampleRadios2"> no </label>
+                </div>
+            </div>
+        </accordion-group>
+        <accordion-group #cards>
+            <div class="d-flex align-items-center" accordion-heading>
+                <em class="far fa-credit-card fa-xl pt-1"></em>
+                <p class="px-3 mb-0">Payout loan / credit card debt</p>
+                <em class="fas pt-1 ml-auto" [ngClass]="{
+            'fa-chevron-down': cards?.isOpen,
+            'fa-chevron-up': !cards?.isOpen
+          }"></em>
+            </div>
+            <div class="d-flex radio-group my-3">
+                <div class="form-check px-3">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked />
+                    <label class="form-check-label" for="exampleRadios1"> yes </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" />
+                    <label class="form-check-label" for="exampleRadios2"> no </label>
+                </div>
+            </div>
+        </accordion-group>
+        <accordion-group #emergency>
+            <div class="d-flex align-items-center" accordion-heading>
+                <em class="fas fa-funnel-dollar fa-xl pt-1"></em>
+                <p class="px-3 mb-0">Interested in any emergency fund</p>
+                <em class="fas pt-1 ml-auto" [ngClass]="{
+            'fa-chevron-down': emergency?.isOpen,
+            'fa-chevron-up': !emergency?.isOpen
+          }"></em>
+            </div>
+            <div class="d-flex radio-group my-3">
+                <div class="form-check px-3">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked />
+                    <label class="form-check-label" for="exampleRadios1"> yes </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" />
+                    <label class="form-check-label" for="exampleRadios2"> no </label>
+                </div>
+            </div>
+        </accordion-group>
+        <accordion-group #investments>
+            <div class="d-flex align-items-center" accordion-heading>
+                <em class="fas fa-hand-holding-usd fa-xl pt-1"></em>
+                <p class="px-3 mb-0">Any other investments</p>
+                <em class="fas pt-1 ml-auto" [ngClass]="{
+            'fa-chevron-down': investments?.isOpen,
+            'fa-chevron-up': !investments?.isOpen
+          }"></em>
+            </div>
+            <div class="d-flex radio-group my-3">
+                <div class="form-check px-3">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked />
+                    <label class="form-check-label" for="exampleRadios1"> yes </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" />
+                    <label class="form-check-label" for="exampleRadios2"> no </label>
+                </div>
+            </div>
+        </accordion-group>
+
+        <accordion-group #help>
+            <div class="d-flex align-items-center" accordion-heading>
+                <em class="fas fa-hands-helping fa-xl pt-1"></em>
+                <p class="px-3 mb-0">Help for new plans</p>
+                <em class="fas pt-1 ml-auto" [ngClass]="{
+            'fa-chevron-down': help?.isOpen,
+            'fa-chevron-up': !help?.isOpen
+          }"></em>
+            </div>
+            <div class="d-flex radio-group my-3">
+                <div class="form-check px-3">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked />
+                    <label class="form-check-label" for="exampleRadios1"> yes </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" />
+                    <label class="form-check-label" for="exampleRadios2"> no </label>
+                </div>
+            </div>
+        </accordion-group>
+    </accordion>
+
+    <div class="card button-card mt-5 mx-2">
+        <div class="d-flex justify-content-between my-3">
+            <button type="button" class="btn btn-outline-info mx-2">
+        Skip Questions
+      </button>
+            <button type="button" class="btn btn-info mx-2" routerLink="/goal-list">
+        Continue
+      </button>
         </div>
-        <div class="col-md-6">
-          <img
-            alt="survey-image"
-            class="survey-image-style"
-            src="../../../../assets/image/survey.png"
-          />
-        </div>
-      </div>
     </div>
-  </div>
 </div>

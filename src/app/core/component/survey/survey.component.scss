@@ -1,32 +1,53 @@
-.survey-card {
-  background: #eef0ef;
-}
 accordion-group {
-  padding: 10px;
+    padding: 10px;
+}
+
+.survey-icons {
+    width: 70px;
+    height: 70px;
 }
 
 accordion-group {
-  ::ng-deep {
-    div {
-      &.panel {
-        border: none;
-      }
-      & > div.panel-heading.card-header.panel-enabled {
-        border: none;
-        background: none;
-        font-size: 20px;
-      }
+     ::ng-deep {
+        div {
+            &.panel {
+                border: none;
+            }
+            &>div.panel-heading.card-header.panel-enabled {
+                border: none;
+                background: none;
+                font-size: 20px;
+            }
+            &.panel-body.card-block.card-body {
+                padding: 0px !important;
+            }
+        }
     }
-  }
+}
+
+em {
+    color: #17a2b8;
 }
 
 input.form-check-input {
-  transform: scale(2);
-  margin-top: 10px;
+    transform: scale(2);
+    margin-top: 10px;
 }
 
-.survey-image-style {
-  width: 100%;
-  height: 500px;
-  object-fit: fill;
+.radio-group {
+    margin: 84px;
+}
+
+input[type="radio"]:checked:after {
+    width: 12px;
+    height: 12px;
+    border-radius: 15px;
+    top: -7px;
+    left: 0px;
+    position: relative;
+    background-color: #17a2b8;
+    content: "";
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #fff;
 }
