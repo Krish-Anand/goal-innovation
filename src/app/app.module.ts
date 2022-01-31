@@ -13,6 +13,7 @@ import { HomeComponent } from './core/component/home/home.component';
 import { GoalListComponent } from '../app/core/component/goal-list/goal-list.component';
 import { SurveyComponent } from './core/component/survey/survey.component';
 import { GoalDashboardComponent } from './core/component/goal-dashboard/goal-dashboard.component';
+import { GoalPageComponent } from './core/component/goal-page/goal-page.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { GoalDashboardComponent } from './core/component/goal-dashboard/goal-das
     GoalListComponent,
     SurveyComponent,
     GoalDashboardComponent,
+    GoalPageComponent,
   ],
   imports: [
     BrowserModule,
