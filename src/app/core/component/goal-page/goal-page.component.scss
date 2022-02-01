@@ -1,0 +1,22 @@
+.goal-bg {
+    background-image: url(../../../../assets/image/life_insurance.jpg);
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.form-floating>.form-control {
+    height: 40px;
+    border-bottom: 1px solid #ced4da !important;
+    border-radius: 0px;
+    border: none;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.form-floating>label {
+    padding: 5px;
+}
