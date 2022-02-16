@@ -1,25 +1,25 @@
 .goal-outer {
     border-radius: 10px;
-    border: 1px solid rgb(238, 233, 233);
-    background: #fff;
+    border: 1px solid rgb(3, 3, 3);
+    background: rgba(255, 16, 16, 0);
 }
 
 #rcorners1 {
     border-radius: 30px;
-    background: white;
+    background: rgba(247, 243, 243, 0.226);
     padding: 20px;
     width: -fit-content;
     height: 50px;
 }
 
 .digital-active-content {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.226);
 }
 
 .digital-message {
-    background: #c3cdcf;
+    background: #a1c2b8;
     border-radius: 10px;
-    border: 0.5px solid rgb(238, 233, 233);
+    border: 0.5px solid rgb(187, 177, 177);
 }
 
 .badge-place {

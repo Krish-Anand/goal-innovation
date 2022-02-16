@@ -1,20 +1,147 @@
-.spacer {
-  flex: 1;
-}
+// .spacer {
+//   flex: 1;
+// }
 
-.toolbar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  background-color: white;
-  color: black;
-  font-weight: 600;
-}
+// .toolbar {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   height: 60px;
+//   display: flex;
+//   align-items: center;
+//   background-color: white;
+//   color: black;
+//   font-weight: 600;
+// }
 
-.toolbar img {
-  margin: 0 16px;
-}
+// .toolbar img {
+//   margin: 0 16px;
+// }
+
+// .toolbar {
+//   position: fixed;
+//   left: 0;
+//   top: 0;
+//   width: 100%;
+//   background-image: url("http://webmadewell.com/wp-content/uploads/2018/01/img-bg-sample-parallax-header.jpg");
+//   background-position: center;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+// }
+// .toolbar::before {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   background-color: rgba(10, 159, 179, 0.829);
+//   opacity: 0.3;
+// }
+// .sample-header-section {
+//   position: relative;
+//   padding: 15% 0 10%;
+//   max-width: 640px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   color: rgb(255, 255, 255);
+//   text-shadow: 1px 1px 4px rgba(10, 159, 179, 0.829);
+//   font-family: "Montserrat", sans-serif;
+// }
+// h1 {
+//   font-weight: 500;
+// }
+// h2 {
+//   font-weight: 400;
+// }
+// // .sample-section-wrap {
+// //   position: relative;
+// //   background-color: white;
+// // }
+// // .sample-section {
+// //   position: relative;
+// //   max-width: 640px;
+// //   margin-left: auto;
+// //   margin-right: auto;
+// //   padding: 40px;
+// // }
+
+// // @import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
+
+// // body {
+// //     background: #cecece
+// // }
+
+// // header {
+// //     background: #000;
+// //     color: #fff
+// // }
+
+// // .left-side,
+// // .right-side {
+// //     height: 100vh
+// // }
+
+// // .navbar-transparent {
+// //     background: rgb(0, 204, 255)
+// // }
+// // .navbar-nav>li>a {
+// //   color: rgb(1, 12, 24)
+// // }
+
+// // .navbar-nav>li:hover {
+// //   border-bottom: 1px solid #fff
+// // }
+// // .navbar-nav>.active {
+// //   border-bottom: 1px solid #fff
+// // }
+
+// // .navbar-brand {
+// //   font-family: 'Allerta Stencil', sans-serif;
+// //   color: #83ff00
+// // }
+
+// // .navbar-brand:hover {
+// //   color: #fff
+// // }
+// // .left-side img {
+// //   padding-top: 100px
+// // }
+
+// // .shape {
+// //   width: 100%;
+// //   height: 100vh;
+// //   background: linear-gradient(to bottom, #ce0000, #7A0800 70%);
+// //   // position: absolute;
+// // //   -webkit-clip-path: ellipse(500px 500px at 10% 5%)
+// // }
+
+// // .right-side {
+// //   padding-top: 150px
+// // }
+
+// // .right-side h1 {
+// //   font-family: 'Allerta Stencil', sans-serif;
+// //   font-size: 2.4em;
+// //   text-align: center
+// // }
+
+// // .right-side p {
+// //   font-size: 1.5em;
+// //   text-align: center;
+// //   font-weight: bold
+// // }
+
+// // .btn.order-button {
+// //   background: transparent;
+// //   border: 2px solid #83ff00;
+// //   color: #83ff00;
+// //   border-radius: 30%;
+// //   transition: 0.7s
+// // }
+
+// // .btn.order-button:hover {
+// //   border: 2px solid #ce0000;
+// //   color: #ce0000
+// // }
